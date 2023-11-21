@@ -1,0 +1,91 @@
+
+<ion-content [fullscreen]="true">
+    <div class="imagem">
+    </div>
+
+  <div id="container">
+    <h3 >{{memoria}}</h3>
+    <h1>{{resultado}}</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button size="large"  color="warning" (click)="operador('%')">%</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('7')">7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('8')">8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('9')">9</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="warning" (click)="operador('+')">+</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button size="large"  color="warning" (click)="operador('x²')">x²</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('4')">4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('5')">5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('6')">6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="warning" (click)="operador('-')">-</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button size="large"  color="warning" (click)="operador('x²')">+/-</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button  size="large" color="light" (click)="digito('1')">1</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('2')">2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('3')">3</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large"  color="warning" (click)="operador('*')">*</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button size="large"  color="warning" (click)="operador('x²')">:]</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large"  fill="outline" color="warning" (click)="redefinir()">C</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="light" (click)="digito('0')">0</ion-button>
+        </ion-col>  
+        <ion-col>
+          <ion-button size="large" color="warning"  (click)="calcular()">=</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button size="large" color="warning" (click)="operador('/')">/</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>
